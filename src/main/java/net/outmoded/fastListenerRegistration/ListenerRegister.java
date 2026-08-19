@@ -20,7 +20,6 @@ public class ListenerRegister {
 
             ClassPath classpath = ClassPath.from(loader); // scans the class path used by classloader
 
-            System.out.println(loader.getDefinedPackages());
             for (ClassPath.ClassInfo classInfo : classpath.getAllClasses()) {
 
                 Class<?> aClass = classInfo.load();
