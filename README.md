@@ -2,8 +2,8 @@ A small lib (6kb) to register listeners with a annotation.
 
 This was made for papermc 1.21.11 and up but it probably works for more or less any version.
 
-This lib works by using reflection to create a new instance of the listener class after the user class the
-register method
+This lib works by using reflection to create a new instance of the listener class after the user
+registers a method
 ```
 ListenerRegister.register(this); // put this in your onEnable method
 @EventListener // put this on any event listener you wish to auto register
