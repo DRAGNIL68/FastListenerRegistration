@@ -8,3 +8,32 @@ register method
 ListenerRegister.register(this); // put this in your onEnable method
 @EventListener // put this on any event listener you wish to auto register
 ```
+
+hosted on 
+```
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+<dependency>
+    <groupId>com.github.DRAGNIL68</groupId>
+    <artifactId>FastListenerRegistration</artifactId>
+    <version>-SNAPSHOT</version>
+</dependency>
+```
+```
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+  dependencies {
+        implementation 'com.github.DRAGNIL68:FastListenerRegistration:-SNAPSHOT'
+}
+```
