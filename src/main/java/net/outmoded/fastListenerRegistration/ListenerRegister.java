@@ -7,9 +7,6 @@ import org.bukkit.plugin.Plugin;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 public class ListenerRegister {
     private ListenerRegister() {}
@@ -19,8 +16,7 @@ public class ListenerRegister {
         try {
 
             ClassPath classpath = ClassPath.from(loader); // scans the class path used by classloader
-
-            for (ClassPath.ClassInfo classInfo : classpath.getAllClasses()) {
+            for (ClassPath.ClassInfo classInfo : classpath.getTopLevelClassesRecursive(plugin.getClass().getPackageName())) {
 
                 Class<?> aClass = classInfo.load();
 
