@@ -20,7 +20,7 @@ ListenerRegister.register(this); // put this in your onEnable method
 <dependency>
     <groupId>com.github.DRAGNIL68</groupId>
     <artifactId>FastListenerRegistration</artifactId>
-    <version>-SNAPSHOT</version>
+    <version>712aad3b28</version>
 </dependency>
 ```
 ```
@@ -33,6 +33,6 @@ ListenerRegister.register(this); // put this in your onEnable method
 	}
 
   dependencies {
-        implementation 'com.github.DRAGNIL68:FastListenerRegistration:-SNAPSHOT'
+        implementation 'com.github.DRAGNIL68:FastListenerRegistration:712aad3b28'
 }
 ```
