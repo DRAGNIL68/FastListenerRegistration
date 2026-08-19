@@ -9,7 +9,6 @@ ListenerRegister.register(this); // put this in your onEnable method
 @EventListener // put this on any event listener you wish to auto register
 ```
 
-hosted on 
 ```
 	<repositories>
 		<repository>
